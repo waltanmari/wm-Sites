@@ -1,0 +1,81 @@
+.esva {
+	
+	padding-top: 100px;padding-bottom: 100px;
+	background: url(../img/esigvsanalog/bg.jpg)  no-repeat 100% center;
+	background-size: cover;
+	color: #fff;
+	text-align: center;
+	z-index: -199;
+
+	.row {
+		display: block;
+		&:nth-child(2) {
+			margin-top: 50px;
+		}
+	}
+
+	&-h1 {
+		font-family: "pragmatical";
+		font-size: 50px;
+		
+	}
+			.b-evsa-block {
+				display: inline-block;
+				width: 450px;
+				vertical-align: top;
+			}
+	&-block {
+
+		display: inline-block;
+		vertical-align: top;
+		width: 100%;
+					
+
+		
+		&:nth-child(1) {
+			margin-left: 0;
+		}
+		&-h1 {
+			font-weight: bold;
+			text-transform: uppercase;
+			font-size: 25px;
+			margin-top: 50px;
+			padding-top: 25px;
+			padding-bottom: 25px;
+			border: 3px solid rgba(#fff, .1);
+			font-family: 'pragmatical';
+			
+		}
+
+			.b-left {
+				text-align: center; 
+				height: 100%; 
+				width: 70px; 
+				display: inline-block; 
+				vertical-align: middle; 
+			}
+			.b-right {
+				height: 100%; 
+				width: 350px; 
+				display: inline-block;
+				 vertical-align: middle; 
+
+				}
+ 			.fared { color: $red; }
+			.fagreen { color: $green; font-weight: bold; letter-spacing: 1px}
+		&-trigger {
+			// background: rgba(#fff, .005);
+			padding-top: 25px;padding-bottom: 25px;
+			text-align: left;
+			margin-top: 10px;
+			font-size: 20px;
+			
+			i {
+				
+				font-size: 25px;
+				vertical-align: top;
+			}
+		}
+	}
+
+}

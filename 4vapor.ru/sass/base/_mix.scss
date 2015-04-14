@@ -1,0 +1,77 @@
+@mixin dib {
+	display: inline-block;
+	vertical-align: middle;	
+}
+@mixin dib-b {
+	display: inline-block;
+	vertical-align: bottom;	
+}
+@mixin dib-t {
+	display: inline-block;
+	vertical-align: top;	
+}
+@mixin dib-h {
+	display: inline-block;
+	vertical-align: middle;	
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+@mixin button($borderwidth, $textcolor, $bgcolor) {
+		padding: 15px;
+		padding-left: 30px;
+		padding-right: 30px;
+		background: $bgcolor;
+		color: $textcolor;
+		border-radius: $borderwidth;
+		border-bottom: $borderwidth solid darken($red, 10%);
+		cursor: pointer;
+
+		&:hover {
+			color: darken($textcolor, 5%);
+			background: darken($bgcolor, 5%);
+			border-bottom: $borderwidth solid darken($bgcolor, 15%);
+		}
+		&:active {
+			color: darken($textcolor, 10%);
+			background: darken($bgcolor, 10%);	
+			border-bottom: 0px solid darken($bgcolor, 20%);		
+				-webkit-transition: all .1s;
+				   -moz-transition: all .1s;
+				    -ms-transition: all .1s;
+				     -o-transition: all .1s;
+				        transition: all .1s;
+				-webkit-transform: translate(0px, $borderwidth);
+				   -moz-transform: translate(0px, $borderwidth);
+				    -ms-transform: translate(0px, $borderwidth);
+				     -o-transform: translate(0px, $borderwidth);
+				        transform: translate(0px, $borderwidth);	
+		}
+}
+@mixin buttonitem($borderwidth, $textcolor, $bgcolor) {
+		padding: 7px;
+		padding-left: 10px;
+		padding-right: 10px;
+		font-size: 13px;
+		background: $bgcolor;
+		color: $textcolor;
+		border-radius: $borderwidth;
+		border-bottom: $borderwidth solid darken($red, 10%);
+		cursor: pointer;
+
+		&:hover {
+			color: darken($textcolor, 5%);
+			background: darken($bgcolor, 5%);
+			border-bottom: $borderwidth solid darken($bgcolor, 15%);
+		}
+		&:active {
+			color: darken($textcolor, 10%);
+			background: darken($bgcolor, 10%);	
+			
+				-webkit-transition: all .1s;
+				   -moz-transition: all .1s;
+				    -ms-transition: all .1s;
+				     -o-transition: all .1s;
+				        transition: all .1s;
+
+		}
+}

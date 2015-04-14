@@ -1,0 +1,47 @@
+.tr {
+	position: relative;
+	width: 100%;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	text-align: center;
+	background: #f3f3f3;
+
+	&-block {
+		width: 24.7%;
+		margin-left: 0;
+		@include dib;
+
+		&:first-child {
+			margin-left: 0;
+		}
+		i {
+			font-size: 25px;
+			color: #a1a1a1;
+			@include dib;
+		}
+		&-h1 {
+			font-weight: bold;
+			margin-left: 10px;
+			text-align: left;
+			@include dib;
+
+			p {
+				margin-top: 5px;
+				color: #a1a1a1;
+			}
+			img {
+				width: 40px;
+				margin-top: 0;
+				margin-left: 5px;
+				vertical-align: middle;
+
+				&:first-child {
+					margin-left: 0;
+				}
+				&:last-child {
+					width: 25px;
+				}
+			}
+		}
+	}
+}

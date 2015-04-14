@@ -1,0 +1,43 @@
+.he {
+	height: 100px;		
+	background: $black;	
+	.content {
+		position: relative;
+	}
+	&-descript {
+		width: auto;
+		padding-top: 30px;
+		font-size: 15px;
+		text-align: left;
+		color: #fff;
+			@media screen and (max-width: 1000px) {
+				padding-top: 40px;
+				font-size: 12px;
+			}
+			@media screen and (max-width: 640px) {
+				font-size: 0;
+			}			
+		&-logo {
+			width: 200px;
+			display: inline-block;
+			vertical-align: top;
+			@media screen and (max-width: 1000px) {
+				width: 100px;
+			}
+		}
+		&-h1 {
+			display: inline-block;
+			vertical-align: top;
+			margin-left: 50px;
+
+		}
+	}
+	&-phone {
+		
+		font-size: 20px;
+		position: absolute;
+		top: 30px;
+		right: 0px;
+		color: #fff;
+	}
+}

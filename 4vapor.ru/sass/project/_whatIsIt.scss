@@ -1,0 +1,75 @@
+.wii {
+	margin-top: 50px;
+	
+	position: relative;
+	text-align: center;
+	&-left, &-right {
+		width: 40%;
+		@include dib;
+		margin-top: 50px;
+		text-align: left;
+	}
+	&-right {
+		margin-left: 50px;
+	}
+	&-h1 {
+		text-align: center;
+		font-family: mainfontl;
+		position: relative;
+		font-size: 40px;
+		color: $red;
+		
+		p {
+			position: absolute;
+			top: -75px;left: 80%;
+			color: #f3f3f3;
+			font-size: 200px;
+			z-index: -999;
+			
+		}
+	}
+	&-descript {
+		position: relative;
+		.p {
+			position: absolute;
+			
+			&-slash {
+				position: absolute;
+				color: #f3f3f3;
+				left: -45px;
+				font-size: 70px;
+				top: -12px;
+				font-style: italic;
+
+			}
+			&-h1 {
+				font-style: italic;	
+				font-weight: bold;
+				font-size: 15px;
+			}
+			&-h2 {
+				margin-top: 10px;
+				font-style: italic;
+				font-size: 15px;
+				color: #999;
+			}
+		}
+	}
+	&-img {
+		margin-top: 50px;
+	}
+	li {
+		list-style: none;
+		margin-top: 15px;
+		color: #555;
+		cursor: default;
+		&:hover {
+			color: $green;
+
+		}
+		i {
+			padding-right: 10px;
+			color: $green;
+		}
+	}
+}

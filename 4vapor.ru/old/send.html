@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="RU">
+<head>
+    
+    <title>4VAPOR.RU</title>
+   
+    <meta charset="utf-8" />
+<!--     <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no"> -->
+	<meta http-equiv="Cache-Control" content="max-age=7200, proxy-revalidate">
+    <meta http-equiv="cleartype" content="on"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <meta name="description" content=""/>
+    <meta name="robots" content="noyaca"/>  
+    <meta name="robots" content="noodp"/>
+    <meta name="keywords" content=""/>
+    <meta name="author" content=""/>
+    <meta name="copyright" content="(c)"> 
+    <meta http-equiv="Reply-to" content="vladislavnurov@ya.ru">
+    <meta name="apple-mobile-web-app-capable" content="no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon" href="img/apple/apple-touch-icon.jpg">
+	<link href="img/apple/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76" />
+	<link href="img/apple/apple-touch-icon-120x120.jpg" rel="apple-touch-icon" sizes="120x120" />
+	<link href="img/apple/apple-touch-icon-152x152.jpg" rel="apple-touch-icon" sizes="152x152" />
+
+
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/animate.css">
+	
+	<!-- google fonts -->
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+</head>
+<body>
+
+	
+
+<div class="header he">
+	<div class="content">
+		<div class="he-descript">
+			<img src="img/4vaporwhite.png"  alt="" class="he-descript-logo">
+			<div class="he-descript-h1">
+				Интернет-магазин электронных сигарет <br>С доставкой по РФ и СНГ
+			</div>
+		</div>
+		<div class="he-phone">+7 (982) 337-04-19 <br> +7 (982) 337-04-19</div>
+	</div>
+</div>
+
+<div class="success">
+	<div class="content">	Заказ успешно отправлен! </div>
+
+</div>
+<div class="suc">
+	<div class="suc-h3">
+				<div class="content">
+					<a href="http://4vapor.ru/">Переадрессация на главную страницу</a>
+					<span class="suc-time" id="suc-time">5</span>
+				</div>
+			</div>
+</div>
+	<script type="text/javascript">
+		var i = 5;//время в сек.
+		function time(){
+		 document.getElementById("suc-time").innerHTML = i;//визуальный счетчик
+		 i--;//уменьшение счетчика
+		 if (i < 0) location.href = "http://4vapor.ru/";//редирект
+		}
+		time();
+		setInterval(time, 1000);
+	</script>
+
+<div class="footer fo">
+	
+</div>
+
+
+
+
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>                 
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.2/fastclick.min.js"></script>
+	<script type='application/javascript'>
+		window.addEventListener('load', function() {
+		    new FastClick(document.body);
+		}, false);
+	</script>
+	<script src="js/modernizer.js"></script>       
+	<script src="js/wow.min.js"></script>
+<!-- прокрутка до якоря -->
+	<script type="text/javascript">
+	$(document).ready(function(){
+	   $('a[href*=#]').bind("click", function(e){
+	      var anchor = $(this);
+	      $('html, body').stop().animate({
+	         scrollTop: $(anchor.attr('href')).offset().top
+	      }, 500);
+	      e.preventDefault();
+	   });
+	   return false;
+	});
+	</script>
+<!-- // -->
+	<script>
+	 new WOW().init();
+	</script>
+	<script type="text/javascript">
+		$(function($) {
+		 $.localScroll({
+		  duration: 500,
+		  hash: false });
+		 });
+	</script>
+</body>
+</html>

@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="RU" ng-app>
+<head >
+    
+    <title>4VAPOR.RU</title>
+   
+    <meta charset="utf-8" />
+  <!--   <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no"> -->
+	<meta http-equiv="Cache-Control" content="max-age=7200, proxy-revalidate">
+    <meta http-equiv="cleartype" content="on"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <meta name="description" content=""/>
+    <meta name="robots" content="noyaca"/>  
+    <meta name="robots" content="noodp"/>
+    <meta name="keywords" content=""/>
+    <meta name="author" content=""/>
+    <meta name="copyright" content="(c)"> 
+    <meta http-equiv="Reply-to" content="vladislavnurov@ya.ru">
+    <meta name="apple-mobile-web-app-capable" content="no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon" href="img/apple/apple-touch-icon.jpg">
+	<link href="img/apple/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76" />
+	<link href="img/apple/apple-touch-icon-120x120.jpg" rel="apple-touch-icon" sizes="120x120" />
+	<link href="img/apple/apple-touch-icon-152x152.jpg" rel="apple-touch-icon" sizes="152x152" />
+
+
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/animate.css">
+	
+	
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+
+	<!-- Put this script tag to the <head> of your page -->
+	<script type="text/javascript" src="//vk.com/js/api/openapi.js?116"></script>
+
+
+	<script type="text/javascript">
+	  VK.init({
+	  	apiId: 4855174, onlyWidgets: true});
+	</script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+
+<script>
+	$scope.get(url).success(function(data) {
+		$scope.phone = data;
+		$scope.mainImageUrl = data.images[0]
+	})
+	$scope.setImage = function(imageUrl) {
+		$scope.mainImageUrl = imageUrl;
+	}
+</script>
+
+
+</head>
+<body>
+
+<div class="header he" >
+	<div class="content">
+		<div class="he-descript">
+			<img src="img/4vaporwhite.png"  alt="" class="he-descript-logo">
+			<div class="he-descript-h1">
+				Интернет-магазин электронных сигарет <br>С доставкой по РФ и СНГ
+			</div>
+		</div>
+		<div class="he-phone">+7 (982) 337-04-19 <br> +7 (951) 251-02-35</div>
+	</div>
+</div>
+<div class="offer of">
+	<div class="content">
+		<div class="of-b-left">
+			<img src="img/preview/1.jpg" alt="" class="of-img preview-big">
+			<div class="row">
+				<img src="img/preview/1.jpg" alt="" class="of-img-mini preview-mini">
+				<img src="img/preview/3.jpg" alt="" class="of-img-mini preview-mini">
+				<img src="img/preview/4.jpg" alt="" class="of-img-mini preview-mini">
+				<img src="img/preview/5.jpg" alt="" class="of-img-mini preview-mini">
+			</div>
+		</div>
+		<div class="of-b-right">
+			<div class="of-h1">
+				Избавьтесь от табачной зависимости уже через 1 месяц с помощью нашего набора
+			</div>
+				<div class="of-price-cool">
+					<li><i class="fa fa-bookmark-o"></i>Бесплатная доставка</li>
+					<li><i class="fa fa-bookmark-o"></i>Гарантия возврата в течение 2 недель</li>
+					<li><i class="fa fa-bookmark-o"></i>Гарантия качества</li>
+				</div>
+			<div class="of-dottedborder"><div class="dotted"></div></div>
+			<div class="of-complect">
+				<div class="of-complect-h1">
+					В набор входит:
+				</div>
+
+				<div class="of-complect-items"> 
+					<ul>
+						<li><i class="fa fa-angle-right"></i> Электронная сигарета со сменным испарителем</li>
+						<li><i class="fa fa-angle-right"></i> Зарядное устройство</li>
+						<li><i class="fa fa-angle-right"></i> 1 сменный нагреватель</li>
+						<li><i class="fa fa-angle-right"></i> Жидкость 10ml - 18mg никотина (Крепкая)</li>
+						<li><i class="fa fa-angle-right"></i> Жидкость 10ml - 12mg никотина (Средняя)</li>
+						<li><i class="fa fa-angle-right"></i> Жидкость 10ml - 6mg никотина (Легкая)</li>
+						<li><i class="fa fa-angle-right"></i> * Вкус жидкостей вы выбираете сами (10 вкусов)</li>
+					</ul>
+				</div>
+			</div>
+			<div class="of-dottedborder"><div class="dotted"></div></div>
+			<div class="of-price">
+				<div class="of-price-old">
+					<s>2 190 руб.</s>
+				</div>
+				<div class="of-price-new">
+					1790 руб.
+				</div>
+				<div class="of-cta">
+					<a href="#buy">Заказать сейчас</a>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+</div>
+
+
+<div class="spec sp">
+	<div class="content">
+		<div class="sp-block">
+			<img src="" alt="" class="sp-block-img">
+			<div class="sp-block-h1">
+				Безопасно
+			</div>
+			<div class="sp-block-text">
+				Не содержит продуктов горения и смол в отличие от обычных сигарет, этот очевидный факт уже не загрязняет легкие.
+			</div>
+		</div>
+		<div class="sp-block">
+			<img src="" alt="" class="sp-block-img">
+			<div class="sp-block-h1">
+				Чисто
+			</div>
+			<div class="sp-block-text">
+				В электронных сигаретах нет бензола, аммиака, мышьяка, цианида и окиси углерода, а также нет дыма, что значит – нет пассивного курения. 
+				Нет необходимости мусорить по окончании курения.
+
+			</div>
+		</div>
+		<div class="sp-block">
+			<img src="" alt="" class="sp-block-img">
+			<div class="sp-block-h1">
+				Удобно
+			</div>
+			<div class="sp-block-text">
+				Не докурив можно бросить в карман, нет опасности попадания пепла на одежду, не требуется пепельниц и нет необходимости мусорить по окончании курения.
+				Используйте электронную сигарету, везде, где захотите. Это не запрещено.
+			</div>
+		</div>
+		<div class="sp-block">
+			<img src="" alt="" class="sp-block-img">
+			<div class="sp-block-h1">
+				Выгодно
+			</div>
+			<div class="sp-block-text">
+				10ml жидкости хватает, в среднем, на две недели - Цена = 150 руб.
+				Одной пачки сигарет хватает на 2-3 дня - Цена = 100р.
+				Экономия в месяц до 1000 руб.
+			</div>
+		</div>
+		<div class="sp-block">
+			<img src="" alt="" class="sp-block-img">
+			<div class="sp-block-h1">
+				Вкусно
+			</div>
+			<div class="sp-block-text">
+				Если вы купите электронную сигарету, вы сможете выбрать вкус, который вам нравится больше всего.
+			</div>
+		</div>
+		<div class="sp-block">
+			<img src="" alt="" class="sp-block-img">
+			<div class="sp-block-h1">
+				Эффективно
+			</div>
+			<div class="sp-block-text">
+				Электронные сигареты являются лучшим способом заменить табак, тем самым постепенно избавиться от табачной и никотиновой зависимости.
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="esigvsanalog esva hide">
+	<div class="content">
+		<div class="esva-h1">
+			Почему электронная сигарета лучше?
+		</div>
+	<!-- отсутствие запаха -->
+	<div class="b-evsa-left b-evsa-block">
+			<div class="esva-analog esva-block">
+				<div class="esva-block-h1">Обычная сигарета</div>
+				<div class="esva-block-trigger fared">
+					<div class="b-left"><i class="fa fa-times "></i></div>
+					<div class="b-right">Запах изо рта, от рук, одежды</div>
+				</div>
+			</div>
+			<div class="esva-analog esva-block">
+				<img src="" alt="" class="esva-block-img">
+				<div class="esva-block-trigger fared">
+					<div class="b-left"><i class="fa fa-times "></i></div>
+					<div class="b-right">Курение запрещено в непредназначенных для этого местах</div>
+				</div>
+			</div>
+			<div class="esva-analog esva-block">
+				<img src="" alt="" class="esva-block-img">
+				<div class="esva-block-trigger fared">
+					<div class="b-left"><i class="fa fa-times "></i></div>
+					<div class="b-right">Сигарета содержит более четырёх тысяч опасных веществ</div>
+				</div>
+			</div>
+			<div class="esva-analog esva-block">
+				<img src="" alt="" class="esva-block-img">
+				<div class="esva-block-trigger fared">
+					<div class="b-left"><i class="fa fa-times "></i></div>
+					<div class="b-right">Пассивное курение вредит здоровью окружающих</div>
+				</div>
+			</div>
+			<div class="esva-analog esva-block">
+				<img src="" alt="" class="esva-block-img">
+				<div class="esva-block-trigger fared">
+					<div class="b-left"><i class="fa fa-times "></i></div>
+					<div class="b-right">Постоянный рост цен.<br>Затраты в месяц в среднем: <br><b style="font-size: 40px;">600 руб.</b> </div>
+				</div>
+			</div>
+	</div>
+	<div class="b-evsa-right b-evsa-block">
+			<div class="esva-ecig esva-block">
+				<div class="esva-block-h1">Электронная сигарета</div>
+				<div class="esva-block-trigger fagreen">
+					<div class="b-left"><i class="fa fa-check "></i></div>
+					<div class="b-right">Отсутствие неприятного запаха</div>
+				</div>
+			</div>
+			<div class="esva-ecig esva-block">
+				
+				<div class="esva-block-trigger fagreen">
+					<div class="b-left"><i class="fa fa-check "></i></div>
+					<div class="b-right">Курить можно везде</div>
+				</div>
+			</div>
+			<div class="esva-ecig esva-block">
+				<img src="" alt="" class="esva-block-img">
+				<div class="esva-block-trigger fagreen">
+					<div class="b-left"><i class="fa fa-check "></i></div>
+					<div class="b-right">Не содержит вредных веществ</div>
+				</div>
+			</div>
+			<div class="esva-ecig esva-block">
+				<img src="" alt="" class="esva-block-img">
+				<div class="esva-block-trigger fagreen">
+					<div class="b-left"><i class="fa fa-check "></i></div>
+					<div class="b-right">Отсутствие вреда для окружающих</div>
+				</div>
+			</div>	
+			<div class="esva-ecig esva-block">
+				<img src="" alt="" class="esva-block-img">
+				<div class="esva-block-trigger fagreen">
+					<div class="b-left"><i class="fa fa-check "></i></div>
+					<div class="b-right">Затра в месяц в среднем: <br><b style="font-size: 40px;">200 руб.</b></div>
+				</div>
+			</div>		
+	</div>
+
+		
+					
+
+	<!-- trigger 2 -->
+		<div class="row">
+
+	
+		</div>
+	<!-- trigger 3 -->
+		<div class="row">
+
+		
+		</div>
+	<!-- trigger 4 -->
+		<div class="row">
+	
+		</div>
+	<!-- trigger 5 -->
+		<div class="row">
+
+	
+		</div>
+	</div>
+</div>
+
+
+
+<div class="kitinfo ki">
+	<div class="content">
+		<div class="ki-h1">
+			Что вы получаете?
+		</div>
+		<!-- <img class="ki-img" src="img/sig/emus-goriz.png" alt=""> -->
+		<div class="ki-emus">
+			<div class="left">
+				<img src="img/sig/1emus.png"  alt="" class="ki-emus-img">
+			</div>
+			<div class="right">
+				<div class="ki-emus-h1">
+					<span class="elsig">Электронная сигарета</span><br> KANGER EMUS
+				</div>
+				<div class="ki-emus-spec">
+					<li><i class="fa fa-angle-right"></i> Емкость аккумулятора: 500mAh</li>
+					<li><i class="fa fa-angle-right"></i> Сопротивление испарителя: ~1,8 Ом</li>
+					<li><i class="fa fa-angle-right"></i> Объем клиромайзера: ~1,2 мл</li>
+					<li><i class="fa fa-angle-right"></i> Отсечка: 10 секунд (максимальная продолжительность затяжки)</li>
+					<li><i class="fa fa-angle-right"></i> Защита от короткого замыкания</li>
+					<li><i class="fa fa-angle-right"></i> Коннектор: 510</li>
+					<li><i class="fa fa-angle-right"></i> Размеры: диаметр - 12.5 мм, длина сигареты в сборе - 140 мм</li>
+				</div>
+				<div class="ki-emus-h2">
+					А так же:
+				</div>
+				<div class="ki-emus-more-block">
+					<img src="img/sig/KangerTechEMUS3_charg.jpg" alt="" class="ki-emus-more-block-img">
+					<div class="ki-emus-more-block-h1">
+						Зарядное устройство Kanger
+					</div>
+				</div>
+				<div class="ki-emus-more-block">
+					<img src="img/sig/KangerTechEMUS_clir.jpg" alt="" class="ki-emus-more-block-img">
+					<div class="ki-emus-more-block-h1">
+						Сменный испаритель - 1 шт.
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="otzivi otz">
+	<div class="content">	
+		<div class="otz-h1">
+			Отзывы
+		</div>			
+		<!-- Put this div tag to the place, where the Comments block will be -->
+		<div class="vkcom" id="vk_comments"></div>
+		<script type="text/javascript">
+		VK.Widgets.Comments("vk_comments", {
+			limit: 10, 
+			width: "480", 
+			autoPublish: 1,
+
+
+		});
+		</script>
+	</div>
+</div>
+
+
+<div class="buyform bu" id="buy">
+	<div class="content">
+		<div class="bu-h1">
+			Форма заказа
+		</div>
+
+		<div class="bu-form">
+			<form action="php/send.php" method="post">
+				<div class="jija">
+					Выберите жидкости:
+				</div>
+				<select name="hard" id="" placeholder="Крепкие">
+					<option>
+			            18mg Крепкая (Выбрать)
+			        </option>
+			        <option>
+			            Арбуз
+			        </option>					
+			        <option>
+			            Банан
+			        </option>
+			        <option>
+			            Вишня
+			        </option>		
+				</select>
+				<select name="medium" id="">
+					 <option>
+			            12mg Средняя (Выбрать)
+			        </option>
+			        <option>
+			            Арбуз
+			        </option>					
+			        <option>
+			            Банан
+			        </option>
+			        <option>
+			            Вишня
+			        </option>
+				</select>
+				<select name="null" id="">
+					 <option>
+			           6mg Легкая (Выбрать)
+			        </option>
+			        <option>
+			            Арбуз
+			        </option>					
+			        <option>
+			            Банан
+			        </option>
+			        <option>
+			            Вишня
+			        </option>
+				</select>
+				<div class="contact">
+					Заполните:
+				</div>
+				<input name="name" placeholder="Ф.И.О." type="name">
+				<input name="email" placeholder="Ваша@Почта или ВКонтакте" type="text">
+				<!-- <input name="phone" placeholder="Номер телефона" type="tel"> -->
+				<input name="adres" placeholder="Адрес: Индекс, Город, Улица, Дом" type="text">
+				<textarea  name="msg" placeholder="Дополнительное сообщение. Например: Хочу заказать два набора" type="text"></textarea>
+				<input placeholder="text" type="submit">
+			</form>
+		</div>
+	</div>
+</div>
+
+
+<div class="footer fo">
+	
+</div>
+
+
+
+
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>                 
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.2/fastclick.min.js"></script>
+	<script type='application/javascript'>
+		window.addEventListener('load', function() {
+		    new FastClick(document.body);
+		}, false);
+	</script>
+	<script src="js/modernizer.js"></script>       
+	<script src="js/wow.min.js"></script>
+<!-- прокрутка до якоря -->
+	<script type="text/javascript">
+	$(document).ready(function(){
+	   $('a[href*=#]').bind("click", function(e){
+	      var anchor = $(this);
+	      $('html, body').stop().animate({
+	         scrollTop: $(anchor.attr('href')).offset().top
+	      }, 500);
+	      e.preventDefault();
+	   });
+	   return false;
+	});
+	</script>
+<!-- // -->
+	<script>
+	 new WOW().init();
+	</script>
+	<script type="text/javascript">
+		$(function($) {
+		 $.localScroll({
+		  duration: 500,
+		  hash: false });
+		 });
+	</script>
+
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+(function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter29456535 = new Ya.Metrika({id:29456535,
+                    webvisor:true,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true});
+        } catch(e) { }
+    });
+
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+})(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="//mc.yandex.ru/watch/29456535" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->	
+</body>
+</html>

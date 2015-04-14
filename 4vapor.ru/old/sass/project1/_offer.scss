@@ -1,0 +1,244 @@
+.of {
+padding-top: 100px;padding-bottom: 100px;
+	background: url(../img/offer/bgoffer.jpg)  no-repeat 100% top;
+	background-size: cover;
+	box-shadow: 0 0px 50px rgba(0,0,0,0.5);
+	z-index: 999;
+
+	&-dottedborder {
+		padding-top: 20px;
+		padding-bottom: 20px;
+		margin-left: 4px;
+		.dotted {
+			font-family: arial;
+			height: 30px;
+			width: 3px;
+			border-left: 2px dotted #ddd ;
+		}
+
+
+	}
+
+
+	&-b {
+		&-left {
+			display: inline-block;
+			vertical-align: top;
+			width: 400px;
+			@media screen and (max-width: 1169px) {
+				width: 40%;
+			}
+			@media screen and (max-width: 800px) {
+				width: 100%;
+				display: block;
+			}
+		}
+		&-right {
+			display: inline-block;
+			vertical-align: top;
+			width: 700px;
+			@media screen and (max-width: 1169px) {
+				width: 50%;
+			}
+			@media screen and (max-width: 800px) {
+				width: 100%;
+				display: block;
+			}
+		}
+	}
+
+.row {
+	text-align: center;
+	margin-top: 10px;
+	width: 90%;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+	&-img {
+		width: 90%;
+		border: 3px solid $black;
+		border-radius: 4px;
+			@media screen and (max-width: 800px) {
+				height: auto;
+				width: 50%;
+				text-align: center;
+				margin: auto;
+			}
+
+		&-mini {
+			width: 60px;
+			margin-left: 10px;
+			&:first-child {
+				margin-left: 0;
+			}
+			border: 2px solid lighten($black, 10%);
+			&:hover {
+				border: 2px solid #999;
+				cursor: pointer;
+			}
+		}
+	}
+	&-h1 {
+		font-family: "pragmatical";
+		font-size: 35px;
+		font-weight: bold;
+		// padding: 25px;
+		// background:#333;
+		// color: #fff;
+		color: $black;
+		border-radius: 3px;
+			@media screen and (max-width: 1169px) {
+				font-size: 25px;
+			}
+	}
+	&-complect {
+		// margin-top: 50px;
+
+		&-h1 {
+			font-size: 20px;
+			font-weight: bold;
+			color: $black;
+		}
+		&-items {
+			margin-top: 20px;
+			ul {
+				li {
+					margin-top: 5px;
+					&:first-child {
+						margin-top: 0;
+					}
+
+					color: #555;
+
+					.fa {
+						padding-right: 20px;
+						color: #ddd;
+					}
+
+				}
+			}
+		}
+	}
+	&-price {
+			@media screen and (max-width: 800px) {
+
+				text-align: center;
+				width: 100%;
+				padding-left: 0;
+				padding-right: 0;
+
+
+			}
+			display: inline-block;
+			background: rgba($black, .9);
+			padding: 50px;
+			border-radius: 5px;
+
+		&-old {
+			color: #999;
+			font-size: 20px;
+
+		}
+		&-new {
+			color: #fff;
+			font-size: 50px;
+			font-weight: bold;
+			
+			display: inline-block;
+			vertical-align: middle;
+
+		}
+		&-cool {
+
+			font-size: 15px;
+			margin-top: 20px;
+			color: #888;
+			li {
+				list-style: none;
+				display: inline-block;
+				margin-left: 15px;
+
+					@media screen and (max-width: 1169px) {
+						display: block;
+						margin-left: 0;
+					}
+				&:first-child {
+					margin-left: 0;
+				}
+				i {
+					padding-right: 15px;
+				}
+			}
+		}
+	}
+	&-cta {
+		text-align: center;
+		display: inline-block;
+		vertical-align: top;
+		margin-left: 25px;
+		margin-top: 5px;
+			@media screen and (max-width: 1169px) {
+				display: block;
+				margin-left: 0;
+				margin-top: 25px;
+				text-align: left;
+			}
+			@media screen and (max-width: 800px) {
+
+				text-align: center;
+				margin: 50px auto;
+			}
+		a {		
+
+			font-size: 16px;
+			padding-top: 14px;
+			padding-bottom: 14px;
+			padding-right: 50px;
+			padding-left: 50px;
+			background: $buttoncta;
+			color: #fff;
+			text-decoration: none;
+			text-transform: uppercase;
+			border-bottom: 5px solid darken($buttoncta, 15%);
+			border-top-left-radius: 100px;
+			border-top-right-radius: 100px;
+			border-bottom-left-radius: 100px;
+			border-bottom-right-radius: 100px;
+			box-shadow: 0 7px 14px rgba(0,0,0,0.2);
+			&:hover {
+				background: darken($buttoncta, 5%);
+				color: darken(#fff, 5%);				
+				border-bottom: 5px solid darken($buttoncta, 25%);
+				box-shadow: 0 7px 14px rgba(0,0,0,0.3);
+			}
+			&:active {
+				background: darken($buttoncta, 5%);
+				color: darken(#fff, 5%);
+				box-shadow: 0 7px 14px rgba(0,0,0,0.3);
+				border-bottom: 0px solid darken($buttoncta, 25%);;
+				-webkit-transition: all .1s;
+				   -moz-transition: all .1s;
+				    -ms-transition: all .1s;
+				     -o-transition: all .1s;
+				        transition: all .1s;				        
+			}
+		}
+			&:hover {
+
+				
+			}				
+			&:active {
+				-webkit-transition: all .1s;
+				   -moz-transition: all .1s;
+				    -ms-transition: all .1s;
+				     -o-transition: all .1s;
+				        transition: all .1s;
+				-webkit-transform: translate(0px, 5px);
+				   -moz-transform: translate(0px, 5px);
+				    -ms-transform: translate(0px, 5px);
+				     -o-transform: translate(0px, 5px);
+				        transform: translate(0px, 5px);
+				        
+			}
+	}
+}

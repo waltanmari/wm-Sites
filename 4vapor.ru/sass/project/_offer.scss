@@ -1,0 +1,102 @@
+.of {
+	height: auto;
+	margin-top: 40px;
+	text-align: center;
+
+	&-left, &-right {
+		margin-left: 100px;
+		@include dib-t;
+	}
+	&-right {
+		width: 650px;
+		text-align: left;
+	}
+	&-img {
+		z-index: -99;
+		-webkit-transform: translate(0px, 15px);
+		-moz-transform: translate(0px, 15px);
+		-ms-transform: translate(0px, 15px);
+		-o-transform: translate(0px, 15px);
+		transform: translate(0px, 15px);
+	}
+	&-h1 {
+		font-size: 20px;
+		line-height: 25px;
+		position: relative;
+		text-transform: uppercase;
+		color: $red;
+
+		.slash {
+			font-size: 100px;
+			font-weight: bold;
+			position: absolute;
+			top: 5px;
+			left: -50px;
+			color: #f5f5f5;
+		}
+	}
+	&-include {
+		margin-top: 40px;
+		color: #777;
+
+		&-h1 {
+			font-size: 17px;
+			font-weight: bold;
+		}
+		&-list {
+			margin-top: 15px;
+
+			li {
+				font-size: 15px;
+				line-height: 20px;
+				list-style: none;
+			}
+		}
+		&-utp {
+			font-family: mainfontl;
+			font-size: 25px;
+			font-weight: bold;
+			margin-top: 40px;
+			color: $red;
+
+			i {
+				font-size: 25px;
+				font-style: normal;
+				vertical-align: top;
+			}
+		}
+	}
+	&-arrow {
+		padding-top: 25px;
+		text-align: right;
+
+		img {
+			@include dib-t;
+		}
+		p {
+			font-style: italic;
+			color: #999;
+			@include dib-t;
+		}
+	}
+	&-cta {
+		&-price {
+			text-align: right;
+			@include dib;
+
+			.old {
+				color: #999;
+			}
+			.new {
+				font-size: 40px;
+				margin-top: 0;
+				color: $red;
+			}
+		}
+		&-button {
+			margin-left: 40px;
+			@include dib;
+			@include button(3px, #fff, $red);
+		}
+	}
+}

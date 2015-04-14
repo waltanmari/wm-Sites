@@ -1,0 +1,62 @@
+.he {
+font-family: mainfont;
+font-size: 14px;
+	&-logo {
+		@include dib-h;
+		img {
+			width: 150px;
+		}
+
+	}
+	&-hr {
+		@include dib-h;
+		margin-left: 10px;padding-right: 10px;
+		height: 0px;
+		border-left: 2px solid #eee;
+		width: 2px;
+	}
+	&-descript {
+		@include dib-h;
+		
+		width: 150px;
+		color: #999;
+	}
+	&-menu {
+		@include dib-h;
+		font-size: 14px;
+		text-align: center;
+		width: 440px;
+		nav {
+			ul {
+				li {
+					@include dib;
+					font-size: 15px;
+					margin-left: 10px;
+					&:first-child  {
+						margin-left: 0;
+					}
+					a {
+						color: #555;
+						text-decoration: none;
+						padding-bottom: 7px;
+						border-bottom: 0px solid;
+						&:hover {
+							color: $red;
+							border-bottom: 2px solid;
+						}
+
+					}
+				}
+			}
+		}
+
+	}
+	&-cart {
+		@include dib-h;
+		@include button(3px, #fff, $red);
+		.fa {
+			padding-right: 10px;
+		}
+
+	}
+}
