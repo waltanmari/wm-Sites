@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru" >
+  <head>
+    <title>BEATS FM</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta http-equiv="cleartype" content="on"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <meta name="description" content="www.vk.com/beatsfm - Hip-Hop радио"/>
+    <meta name="robots" content="noyaca"/>
+    <meta name="robots" content="noodp"/>
+    <meta name="keywords" content="radio, beats fm, hip hop, downtemp, радио, хип хоп, музыка, битс фм"/>
+    <meta name="author" content="Vladislav Nurov"/>
+    <meta name="copyright" content="(c)">
+    <meta http-equiv="Reply-to" content="vladislavnurov@ya.ru">
+    <meta name="apple-mobile-web-app-capable" content="no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="js/wow.min.js"></script>
+      <script>
+      new WOW().init();
+      </script>
+  </head>
+  <body>
+	<audio id="htmlplayer" src="http://s5.radioheart.ru:8019/live">
+    </audio>
+    <div class="bgimg">
+      <img src="img/logo_min.png"  alt="">
+    </div> 
+    <!-- modal windows -->
+    <div class="modal" >
+      <div class="modal-container modal-center">
+        <div class="end_logo end_scllogo " >
+          <a href="https://soundcloud.com/beatsfmru" target="_blank">
+            <i class="fa fa-soundcloud">
+            </i>
+          </a>
+        </div>
+        <div class="end_logo end_vklogo " >
+          <a href="https://vk.com/beatsfm" target="_blank">
+            <i class="fa fa-vk">
+            </i>
+          </a>
+        </div>
+        <div class="end_logo end_instlogo " id="fullscreen-state">
+          <a href="http://instagram.com/beatsfmradio" target="_blank">
+            <i class="fa fa-instagram">
+            </i>
+          </a>
+        </div>
+      </div>
+      <!-- modal-container -->
+    </div>
+    <!-- modal -->
+    <!-- // end modal windows -->
+    <div class="player is-vertical-centered">
+      <div class="line-1">
+        <a href="http://vk.com/beatsfm" target="_blanc">
+          <span class="player-logo">
+          </span>
+        </a>
+        <span class="player-logo-m">
+        </span>
+        <span class="player-button-play" onclick="play(); yaCounter23746645.reachGoal('playSound'); return true;">
+          <i class="fa fa-play">
+          </i>
+        </span>
+        <span class="player-button-pause" onclick="pause()">
+          <i class="fa fa-pause">
+          </i>
+        </span>
+        <span class="player-button-fullscreen">
+<!-- FULL SCREEN -->
+					<i class="fa fa-fullscreen fa-expand "  id="view-fullscreen" onclick="yaCounter23746645.reachGoal('fullScreen'); return true;"></i>
+					<i class="fa fa-fullscreen fa-compress "  id="cancel-fullscreen"></i>
+        </span>
+      </div>
+      <i class="hr">
+      </i>
+      <i class="hr-mob">
+      </i>
+      <div class="line-2">
+        <span id="player_songname" class="player-songname">
+          BEATS FM RADIO
+        </span>
+      </div>
+    </div>
+    <div class="player-volume-down player-volume" onclick="volumedown()">
+    </div>
+    <div class="player-volume-up player-volume" onclick="volumeup()">
+    </div>
+    <div class="notify-down animated wow fadeOut " data-wow-delay="10s">
+      Volume Down
+    </div>
+    <div class="notify-up animated wow fadeOut " data-wow-delay="10s">
+      Volume Up
+    </div>
+    <div class="contacts">
+      <div class="modal-trigger" id="modal-trigger">
+        Contact
+      </div>
+    </div>
+
+    
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.2/fastclick.min.js"></script>
+  	<script src="js/beatsfm.js"></script>
+  	<script src="js/browser.js"></script>
+
+
+
+
+  </body>
+</html>

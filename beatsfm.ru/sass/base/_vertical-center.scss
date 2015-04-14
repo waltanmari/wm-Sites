@@ -1,0 +1,35 @@
+// Родительский блок position:relative 
+
+.is-vertical-centered {
+  display: table;
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+	transition: all .2s;
+}
+.gecko {
+	.player {
+		display: block;
+		height: 150px;
+		overflow: visible;
+			@media screen and (max-width: 480px) {
+				height: 330px;
+			}
+		}
+}
+.ie {
+	.player {
+		display: block;
+		height: 150px;
+		overflow: visible;
+			@media screen and (max-width: 480px) {
+				height: 330px;
+			}
+	}
+}
+
+.is-relative {
+	position: relative;
+}
+

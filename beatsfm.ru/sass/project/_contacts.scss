@@ -1,0 +1,34 @@
+.contacts {
+cursor: pointer;
+position: absolute;
+bottom: 40px;
+right: 80px;
+text-align: center;
+z-index: 10;
+@media screen and (max-width: 800px) {
+	width: 100%;
+	margin: auto;
+	right: inherit;
+}
+@media screen and (max-width: 640px) {
+	display: none;
+	opacity: 0;
+}
+
+	
+		text-transform: uppercase;
+		text-decoration: none;
+		font-family: DemosNextProLight;
+		color: #454545;
+		transition: all .1s;
+		letter-spacing: 3px;
+		font-size: 15px;
+		&:hover {
+			color: #dfdfdf;
+			transition: all .1s;
+		}
+		&:active {
+			color: #999;
+		}
+	
+}

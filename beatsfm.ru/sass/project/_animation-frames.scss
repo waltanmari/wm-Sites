@@ -1,0 +1,21 @@
+@-webkit-keyframes playing {
+	0% {
+		opacity: .1;
+		border-radius: 6px;
+		width: 80%;
+	}
+	15% {
+		opacity: .2;
+		width: 0;
+
+	}
+	30% {
+		opacity: .0;
+		width: 150px;
+	}
+
+	100% {
+		opacity: .1;
+		width: 80%;
+	}
+}
